@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Recipe page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    /*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+main {
+
+  background-color: hsl(30, 54%, 90%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: auto;
+}
+
+.container {
+  max-width: 60%;
+  max-height: 90%;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding-bottom: 2%;
+  margin-top: 20px;
+
+}
+
+.container img {
+  border-radius: 10px;
+  margin: 5%;
+}
+
+.container h1 {
+  margin:2% 5%;
+  font-family: "Young Serif", serif;
+  font-size: 3rem;
+}
+
+.container p, h2, ul, ol, table{
+  margin: 0% 5%;
+  font-family: "Outfit", sans-serif;
+  line-height: 2;
+  color: hsl(24, 5%, 18%);
+  
+}
+
+.container h2 {
+  font-family: "Young Serif", serif;
+ color: hsl(14, 45%, 36%);
+ margin-bottom: 2%;
+font-size: 2rem;
+}
+
+.container li::marker {
+
+  color: hsl(14, 45%, 36%);
+  font-weight: 800;
+}
+
+.Prep {
+  background-color: hsl(330, 100%, 98%);
+  margin: 5% 5% 3% 5%;
+  }
+
+.Prep h3 {
+ color: hsl(332, 51%, 32%);
+ margin-left: 5%;
+ margin-top: 3%;
+ font-family: "Outfit", system-ui;
+
+}  
+
+.Prep ul {
+  font-family: "Outfit", system-ui;
+  line-height: 2;
+  margin-bottom: 3%;
+  margin-top: 2%;
+}
+
+.Prep li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+hr {
+
+  margin: 3%;
+
+}
+
+
+td {
+border-bottom: 1px solid rgba(192, 171, 171, 0.616);
+margin: 0% 2%;
+line-height: 3;
+
+}
+
+.value {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+
+}
+
+.label {
+  padding-left: 5%;
+}
+
+.bottom {
+border-bottom: 0px;
+margin-bottom: 5px;
+
+}
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (max-width: 700px) {
+
+  .container h1{
+    font-size: 2rem;
+  }
+
+  .container {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.container h2 {
+font-size: 1.5rem;
+
+}
+
+};
+  </style>
+</head>
+<body>
+
+  <main>
+
+    <div class="container">
+
+      <img src="./assets/images/image-omelette.jpeg" alt="Omelette on a plate">
+      
+      <h1>Simple Omelette Recipe</h1>
+
+        <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+        to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+
+
+      <div class="Prep">  
+        <h3>Preparation time</h3>
+
+        <ul>
+          <li><strong>Total:</strong> Approximately 10 minutes</li>
+          <li><strong>Preparation:</strong> 5 minutes</li>
+          <li><strong>Cooking:</strong> 5 minutes</li>
+        </ul>
+
+      </div>
+
+      <h2>Ingredients</h2>
+    
+      <ul>
+        <li>2-3 large eggs</li>
+        <li>Salt, to taste</li>
+        <li>Pepper, to taste</li>
+        <li>1 tablespoon of butter or oil</li>
+        <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+      </ul>
+
+      <hr/>
+
+      <h2>Instructions</h2>
+
+      <ol>
+          <li><strong>Beat the eggs: </strong>In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+            You can add a tablespoon of water or milk for a fluffier texture.</li>
+
+          <li><strong>Heat the pan:</strong> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+
+          <li><strong>Cook the omelette:</strong> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+          the eggs evenly coat the surface.</li>
+
+          <li><strong>Add fillings (optional):</strong> When the eggs begin to set at the edges but are still slightly runny in the 
+          middle, sprinkle your chosen fillings over one half of the omelette.</li>
+
+          <li><strong>Fold and serve: </strong>As the omelette continues to cook, carefully lift one edge and fold it over the 
+          fillings. Let it cook for another minute, then slide it onto a plate.</li>
+
+          <li><strong>Enjoy: </strong>Serve hot, with additional salt and pepper if needed.</li>
+      </ol>
+
+      <hr/>
+
+      <h2>Nutrition</h2>
+
+      <p>The table below shows nutritional values per serving without the additional fillings.</p>
+
+      <table>
+
+         <tr>
+            <td class="label">Calories</td>
+            <td class="value">277kcal</td>
+          </tr>
+        
+          <tr>
+            <td class="label">Carbs</td>
+            <td class="value">0g</td>
+          </tr>
+      
+          <tr>
+            <td class="label">Protein</td>
+            <td class="value">20g</td>
+          </tr>
+
+          <tr>
+            <td class="bottom label">Fat</td>
+            <td class="value bottom">22g</td>
+          </tr>  
+        
+      </table>
+
+    </div>
+
+  </main>
+
+<footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Pete McCartney</a>.
+  </div>
+</footer>
+</body>
+</html>
